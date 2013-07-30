@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Test Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- Bootstrap -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+<link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="style/layout.css" rel="stylesheet">
+<link href="style/jquery.custom-scrollbar.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="brand" href="#">Sumedha Softech</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li> <a href="#">Course Catalog</a> </li>
+            <li class="active"> <a href="#">My Courses</a> </li>
+            <li> <a href="#">About Us</a> </li>
+          </ul>
+          <ul class="nav pull-right">
+            <li class="dropdown"> <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"> Tariq Al-Omaireeni <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="icon-user"></i> My Account</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="icon-check"></i> Your Requests</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="icon-comment"></i> Messages <span class="badge badge-info">2</span></a></li>
+                <li class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="icon-off"></i> Logout </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="contentWrap">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span3">
+        <section class="sidebar">
+          <div class="text-header">Refine Search</div>
+          <form>
+            <div class="block">
+              <label>Course Fee:</label>
+              <div class="btn-group" data-toggle="buttons-checkbox">
+                <button type="button" class="btn">Free</button>
+                <button type="button" class="btn">Paid</button>
+              </div>
+            </div>
+            <div class="block">
+              <label>Audience:</label>
+              <div class="btn-group" data-toggle="buttons-checkbox">
+                <button type="button" class="btn">Male</button>
+                <button type="button" class="btn">Female</button>
+              </div>
+            </div>
+            <div class="block">
+              <div class="relative">
+                <label>Category List:</label>
+                <a class="control collapsed" data-toggle="collapse" data-target="#category" href="#">&nbsp;</a></div>
+              <div id="category" class="piScroll default-skin collapse in" style="height:110px">
+                <ul class="checkList">
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Technical</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Sports</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Arts</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Others</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="block">
+              <div class="relative">
+                <label>City List:</label>
+                <a class="control collapsed" data-toggle="collapse" data-target="#city" href="#">&nbsp;</a></div>
+              <div id="city" class="piScroll default-skin collapse in" style="height:110px">
+                <ul class="checkList">
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Riyadh</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Makkah</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Madina</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Others</label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      Others</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="block">
+              <label>Search Field:</label>
+              <input type="text" class="span12" placeholder="Enter Search Item" />
+              <input type="submit" class="btn btn-info span12" value="Refine Search">
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="span9">
+        <section class="mainContent">
+          <div class="row-fluid">
+            <div class="page-header">Sort By:
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn">New</button>
+                <button type="button" class="btn">Popular</button>
+              </div>
+            </div>
+            <ul class="thumbnails col3">
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/4.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-5">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Sports </span> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/2.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-4">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Technical </span> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/3.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-3">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/4.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-5">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Sports </span> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/2.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-4">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Technical </span> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cols">
+                <div class="thumbnail"> <img src="images/temp/3.jpg" alt="">
+                  <div class="caption">
+                    <h6>Thumbnail label</h6>
+                    <div title="5 stars" class="pi-stars stars-3">
+                      <div class="rating"> </div>
+                    </div>
+                    <div class="tags"> <span class="label label-info">Arts </span> </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination pagination-right">
+              <ul>
+                <li class="disabled"><a href="#">Prev</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="text-header">About</div>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="span4">
+        <div class="text-header">Sitemap </div>
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+      </div>
+      <div class="span4">
+        <div class="text-header">Contact</div>
+        <p> Telephone: +1 800 000 0000 </p>
+        <p> Mobile: +1 800 000 0000 </p>
+        <p> Fax: +1 800 000 0000 </p>
+        <p> Email: <a href="mailto:mail@sumedhasoftech.com">info@yoursite.com</a> </p>
+      </div>
+    </div>
+    <div class="copywrite"> &copy; 2013 <a href="www.sumedhasoftech.com">Sumedha Softech</a> </div>
+  </div>
+</footer>
+
+<!-- Bootstrap --> 
+<script src="http://code.jquery.com/jquery.js"></script> 
+<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+<script src="lib/bootstrap/js/bootstrap-collapse.js"></script> 
+<script src="script/jquery.custom-scrollbar.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".piScroll").customScrollbar({updateOnWindowResize:true});
+		})
+</script>
+</body>
+</html>
