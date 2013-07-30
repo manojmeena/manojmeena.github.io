@@ -1,4 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto+Condensed:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto+Condensed:400,700,300);
 
 * {
 	margin:0px;
@@ -6,9 +6,10 @@
 	outline:none;
 }
 body {
-	font-family: 'Racing Sans One', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
 	overflow:auto;
 	text-align:center;
+	color: #3e5482;
 	display: block;
 }
 .mkinputs {
@@ -31,13 +32,16 @@ body {
     text-transform: capitalize;
     font-size: 18px;
     border-radius: 10px;
-	-webkit-border-radius: 10px;
+	
+    color: #3e5482;
+    -webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
     border: 1px solid #aaa;
 }
 .mkinputs label {
 	cursor: pointer;
 	display: block;
+	font-weight: 300;
 	line-height: 20px;
 	text-align: left;
 	font-size: 18px;
