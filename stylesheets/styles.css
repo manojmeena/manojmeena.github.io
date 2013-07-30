@@ -744,7 +744,7 @@ dt {
   font-size: 14px;
   display: inline-block;
   text-align: center;
-  text-shadow: 0 0 0 #314B0B;
+  border: 1px solid transparent;
 }
 #header nav li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
