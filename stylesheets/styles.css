@@ -773,7 +773,20 @@ dt {
   margin-right: 10px;
   font-size: 11px;
 }
-
+.fb-like
+{
+  margin: 15px 0 0 14px;
+}
+.clearfix:after {
+  content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: block;
+}
 section {
   max-width: 650px;
   padding: 30px 0px 0px;
